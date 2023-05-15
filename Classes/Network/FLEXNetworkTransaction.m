@@ -92,6 +92,17 @@
         if (_request.URL.query) {
             name = [name stringByAppendingFormat:@"?%@", self.request.URL.query];
         }
+
+        // Show GraphQL OperationName in the network overview
+        if (self.request.HTTPBody) {
+            id json = [NSJSONSerialization JSONObjectWithData:self.request.HTTPBody
+                                                      options:0
+                                                        error:nil];
+            NSString *operationName = [json objectForKey:@"operationName"];
+            if (operationName) {
+                name = [name stringByAppendingFormat:@" %@", operationName];
+            }
+        }
         
         _primaryDescription = name;
     }
