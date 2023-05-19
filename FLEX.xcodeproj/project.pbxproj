@@ -375,7 +375,6 @@
 		C3F977862311B38F0032776D /* NSString+ObjcRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F977802311B38F0032776D /* NSString+ObjcRuntime.m */; };
 		C3F977872311B38F0032776D /* NSObject+FLEX_Reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F977812311B38F0032776D /* NSObject+FLEX_Reflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3F977882311B38F0032776D /* NSObject+FLEX_Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F977822311B38F0032776D /* NSObject+FLEX_Reflection.m */; };
-		EEB7D72F29E4575300A8F322 /* NSObject+IvarReflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB7D72E29E4575300A8F322 /* NSObject+IvarReflection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -764,7 +763,6 @@
 		C3F977802311B38F0032776D /* NSString+ObjcRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjcRuntime.m"; sourceTree = "<group>"; };
 		C3F977812311B38F0032776D /* NSObject+FLEX_Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FLEX_Reflection.h"; sourceTree = "<group>"; };
 		C3F977822311B38F0032776D /* NSObject+FLEX_Reflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FLEX_Reflection.m"; sourceTree = "<group>"; };
-		EEB7D72E29E4575300A8F322 /* NSObject+IvarReflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+IvarReflection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1346,7 +1344,6 @@
 				C3694DC123EA147F006625D7 /* UIBarButtonItem+FLEX.m */,
 				C30199482409B38A00759E8E /* CALayer+FLEX.h */,
 				C30199492409B38A00759E8E /* CALayer+FLEX.m */,
-				EEB7D72E29E4575300A8F322 /* NSObject+IvarReflection.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1772,7 +1769,7 @@
 					};
 					3A4C941E1B5B20570088C3F2 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 1430;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1992,7 +1989,6 @@
 				C398625023AD6C67007E6793 /* FLEXObjcRuntimeViewController.m in Sources */,
 				C398626E23AD71C1007E6793 /* FLEXRuntimeClient.m in Sources */,
 				3A4C953D1B5B21410088C3F2 /* FLEXNetworkTransaction.m in Sources */,
-				EEB7D72F29E4575300A8F322 /* NSObject+IvarReflection.swift in Sources */,
 				3A4C94E81B5B21410088C3F2 /* FLEXHierarchyTableViewCell.m in Sources */,
 				3A4C950A1B5B21410088C3F2 /* FLEXFieldEditorView.m in Sources */,
 				3A4C95061B5B21410088C3F2 /* FLEXArgumentInputViewFactory.m in Sources */,
@@ -2023,7 +2019,6 @@
 		1C27A8BE1F0E5A0400F0D02D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -2041,7 +2036,6 @@
 		1C27A8BF1F0E5A0400F0D02D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
